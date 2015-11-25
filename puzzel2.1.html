@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="utf-8">
+		<title>Puzzel 2.1</title> 
+
+			<script type="text/javascript">
+			function vergelijkWoorden (){
+			var woord1 = prompt("Vul uw eerste woord in");
+			var woord1len = woord1.length;
+			var woord2 = prompt("Vul uw tweede woord in");
+			var woord2len = woord2.length;
+
+			if (woord1len>woord2len) {
+				alert(""+woord1+" is langer.")
+			}	else {
+				alert(""+woord2+" is langer.")
+			}
+		}
+			</script>
+		</head>
+
+	<body>
+		<h1>Puzzel 2.1</h1>
+
+		<button onclick="vergelijkWoorden()">Vergelijk je woorden!</button>	
+		
+	</body>
+
+</html>

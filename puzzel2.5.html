@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="utf-8">
+		<title>Puzzel 2.5</title> 
+
+			<script type="text/javascript">
+		function euroNaarPond (){
+			var euro = myForm.elements["euro"].value;
+			var pond = euro * 0.71;
+			document.getElementById('antwoord').innerHTML = "uit de berekeninge is gekomen dat €"+euro+ " euro, " +pond+ " pond is"
+		}
+
+		function euroNaarDollar (){
+			var euro = myForm.elements["euro"].value;
+			var dollar = euro * 1.08;
+			document.getElementById('antwoord').innerHTML = "uit de berekeninge is gekomen dat €"+euro+ " euro, " +dollar+ " dollar is"
+		}
+
+		function euroNaarPeso (){
+			var euro = myForm.elements["euro"].value;
+			var peso = euro * 18.06;
+			document.getElementById('antwoord').innerHTML = "uit de berekeninge is gekomen dat €"+euro+ " euro, " +peso+ " peso is"
+		}
+
+		function euroNaarYen (){
+			var euro = myForm.elements["euro"].value;
+			var yen = euro * 132.04;
+			document.getElementById('antwoord').innerHTML = "uit de berekeninge is gekomen dat €"+euro+ " euro, " +yen+ " yen is"
+		}
+			
+			</script>
+		</head>
+
+	<body>
+		<h1>Puzzel 2.5</h1>
+		<form id="myForm">
+			 hoeveel euro heeft u?: <input type="tekst" name="euro" value"">
+		</form>
+		<button onclick="euroNaarPond()">Bereken euro naar pond</button><span id="antwoord"></span>
+
+		<button onclick="euroNaarDollar()">Bereken euro naar dollar</button><span id="antwoord"></span>
+
+		<button onclick="euroNaarPeso()">Bereken euro naar peso</button><span id="antwoord"></span>
+
+		<button onclick="euroNaarYen()">Bereken euro naar yen</button><span id="antwoord"></span>
+	</body>
+
+</html>

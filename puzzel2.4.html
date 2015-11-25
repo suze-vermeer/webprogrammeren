@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="utf-8">
+		<title>Puzzel 2.4</title> 
+
+			<script type="text/javascript">
+			function vergelijkNamen (){
+			var naam1 = myForm.elements["vul de eerste naam in"].value;
+			var naam1len = naam1.length;
+			var naam2 = myForm.elements["vul de tweede naam in"].value;
+			var naam2len = naam2.length;
+				if (naam1len === naam2len) {
+					document.getElementById('antwoord').innerHTML = "De namen zijn even lang"
+				}	
+				if (naam1len > naam2len) {
+					document.getElementById('antwoord').innerHTML = "De naam "+naam1+" is langer."
+				}
+				if (naam1len < naam2len) {
+					document.getElementById('antwoord').innerHTML = "De naam "+naam2+" is langer."
+				}
+			}
+			
+			</script>
+		</head>
+
+	<body>
+		<h1>Puzzel 2.4</h1>
+		<form id="myForm">
+			 vul de eerste naam in: <input type="tekst" name="vul de eerste naam in" value"">
+			 vul de tweede naam in: <input type="tekst" name="vul de tweede naam in" value"">
+		</form>
+
+		<button onclick="vergelijkNamen()">Vergelijk 2 namen!</button><span id="antwoord"></span>	
+	</body>
+
+</html>
