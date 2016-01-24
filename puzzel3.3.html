@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="utf-8">
+		<title>Puzzel 2.3</title> 
+
+			<script type="text/javascript">
+			function lotto (){
+			var lottoNummer = myForm.elements["Vul uw lotto nummer hier in"].value;
+			var lottoArray = ["1", "5", "8", "20", "22", "34", "50"];
+
+	for(var i = 0; i < lottoArray.length; i++){
+
+		if (lottoNummer == lottoArray[i]) {
+			document.getElementById('antwoord').innerHTML = "U heeft gewonnen!"
+		}
+		else {
+			document.getElementById('antwoord').innerHTML = "U heeft helaas niet gewonnen"
+		}
+	}
+	}
+			</script>
+		</head>
+
+	<body>
+		<h1>Puzzel 2.3</h1>
+		<form id="myForm">
+			 Vul uw lotto nummer hier in:
+			 <br> <input type="tekst" name="Vul uw lotto nummer hier in" value""> </br>
+		</form>
+
+		<br> <button onclick="lotto()">Bekijk of u heeft gewonnen!</button>
+		<br><span id="antwoord"></span> </br>
+	</body>
+
+</html>
